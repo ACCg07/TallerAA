@@ -1,0 +1,17 @@
+
+9
+	README.md,8\e\8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+H
+TallerGestion-master.iml,f\9\f9e9dae59941b6ba08325426438a35f0ccc88d76
+l
+<src/DATA_FRAMEWORK/v00_REPOSITORIO_CRUD_BASICO/Ejemplo1.java,5\e\5e1b626dfeaed87ebdf53c60db492e097035523a
+u
+Esrc/DATA_FRAMEWORK/v00_REPOSITORIO_CRUD_BASICO/UsuarioRepository.java,9\4\944fbb6161bab31a3b4a96fc11e32e480cc9f807
+v
+Fsrc/DATA_FRAMEWORK/v00_REPOSITORIO_CRUD_BASICO/VehiculoRepository.java,d\5\d5850e4304e168253aa5e959bd533f3d56b0f7f4
+R
+"src/Generico/ImpresoraDeDatos.java,0\e\0eb32de674b72650e9fcdb88871849c9c8bba3bf
+j
+:src/DATA_FRAMEWORK/v01_INTERFAZ_CRUD_BASICA/EXPLICACION.md,3\9\392d054fec261266435ca82d715d60bb07f87b28
+L
+src/entidades/Proveedor.java,d\2\d2287a9cdd9e852075fbab7bc5b2eb99642d224c

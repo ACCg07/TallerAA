@@ -1,11 +1,13 @@
-package DATA_FRAMEWORK.v00_REPOSITORIO_CRUD_BASICO;
+package DATA_FRAMEWORK.v01_INTERFAZ_CRUD_BASICA;
 
+import DATA_FRAMEWORK.v00_REPOSITORIO_CRUD_BASICO.Ejemplo1;
+import DATA_FRAMEWORK.v00_REPOSITORIO_CRUD_BASICO.VehiculoRepository;
 import Generico.ImpresoraDeDatos;
 import entidades.Vehiculo;
 
 import java.time.LocalDate;
 
-public class Ejemplo1 {
+public class Ejemplo2 {
 
     public static void main(String[] args) {
         ejecutar();
@@ -16,8 +18,6 @@ public class Ejemplo1 {
         // Crear un repositorio de vehículos
         VehiculoRepository vehiculoRepository1 = new VehiculoRepository();
         VehiculoRepository vehiculoRepository2 = new VehiculoRepository();
-
-
 
         // Crear nuevos vehículos
         Vehiculo vehiculo1 = new Vehiculo("ABC123", "BASTIDOR1", "Toyota", "Corolla", "Blanco", LocalDate.parse("2013-07-01"), LocalDate.parse("2024-07-01"));
@@ -34,9 +34,5 @@ public class Ejemplo1 {
         vehiculoRepository1.findAll().forEach(ImpresoraDeDatos::ImprimirInfoVehiculo);
         System.out.println("Vehículos en el repositorio 2:");
         vehiculoRepository2.findAll().forEach(ImpresoraDeDatos::ImprimirInfoVehiculo);
-
-
     }
 }
-
-
