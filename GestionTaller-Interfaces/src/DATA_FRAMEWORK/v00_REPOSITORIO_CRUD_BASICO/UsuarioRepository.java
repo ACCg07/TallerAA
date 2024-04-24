@@ -1,12 +1,12 @@
 package DATA_FRAMEWORK.v00_REPOSITORIO_CRUD_BASICO;
 
-
 import entidades.Usuario;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
+
 /**
  * <p>La clase {@code UsuarioRepository} representa un repositorio específico para almacenar vehículos.</p>
  * <p>Este repositorio proporciona métodos CRUD (Crear, Leer, Actualizar, Eliminar) para interactuar con los vehículos almacenados.</p>

@@ -16,18 +16,6 @@ public class VehiculoRepository implements INTERFAZ_VehiculoRepository {
         this.vehiculos = new HashMap<>();
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
     @Override
     public Vehiculo save(Vehiculo vehiculo) {
         vehiculos.put(vehiculo.getMatricula(), vehiculo);

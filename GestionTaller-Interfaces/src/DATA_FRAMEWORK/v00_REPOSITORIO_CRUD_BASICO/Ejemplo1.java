@@ -17,7 +17,7 @@ public class Ejemplo1 {
         // Crear un repositorio de vehículos
         VehiculoRepository vehiculoRepository1 = new VehiculoRepository();
         VehiculoRepository vehiculoRepository2 = new VehiculoRepository();
-
+        UsuarioRepository usuarioRepository = new UsuarioRepository();
 
 
         // Crear nuevos vehículos
@@ -25,27 +25,22 @@ public class Ejemplo1 {
         Vehiculo vehiculo2 = new Vehiculo("XYZ789", "BASTIDOR2", "Honda", "Civic", "Negro", LocalDate.parse("2015-10-15"), LocalDate.parse("2023-10-15"));
         Vehiculo vehiculo3 = new Vehiculo("DEF456", "BASTIDOR3", "Ford", "Focus", "Azul", LocalDate.parse("2018-05-20"), LocalDate.parse("2025-05-20"));
 
+        Usuario usuario = new Usuario("Usuario1","contraseña","usuario1@gmail.com");
+
         // Guardar los vehículos en los repositorios
         vehiculoRepository1.save(vehiculo1);
         vehiculoRepository2.save(vehiculo2);
         vehiculoRepository1.save(vehiculo3);
+        usuarioRepository.save(usuario);
 
-                // Listar los vehículos de cada repositorio
+        // Listar los vehículos de cada repositorio
         System.out.println("Vehículos en el repositorio 1:");
         vehiculoRepository1.findAll().forEach(ImpresoraDeDatos::ImprimirInfoVehiculo);
         System.out.println("Vehículos en el repositorio 2:");
         vehiculoRepository2.findAll().forEach(ImpresoraDeDatos::ImprimirInfoVehiculo);
-
-        //USUARIO
-        // Crear repostorio
-        UsuarioRepository usuarioRepository = new UsuarioRepository();
-        //Crear
-        Usuario usuario = new Usuario("Usuario1", "Contraseña","usuario@gmail.com");
-        //Guardar
-        usuarioRepository.save(usuario);
-        //Listar
+        System.out.println("Usuarios en el repositorio:");
         usuarioRepository.findAll().forEach(ImpresoraDeDatos::ImprimirInfoUsuario);
-        System.out.println("Usuario en el repositorio :");
+
 
     }
 }
