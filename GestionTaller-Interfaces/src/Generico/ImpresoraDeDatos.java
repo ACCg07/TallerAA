@@ -1,5 +1,6 @@
 package Generico;
 
+import entidades.Usuario;
 import entidades.Vehiculo;
 
 public class ImpresoraDeDatos {
@@ -16,7 +17,11 @@ public class ImpresoraDeDatos {
             System.out.println(); // Salto de línea entre vehículos
     }
 
-
+    public static void ImprimirInfoUsuario(Usuario usuario) {
+        System.out.println("NombreUsuario: " + usuario.getNombreUsuario());
+        System.out.println("Contraseña: " + usuario.getContraseña());
+        System.out.println("CorreoElectronico" + usuario.getCorreoElectronico());
+    }
 
 
 

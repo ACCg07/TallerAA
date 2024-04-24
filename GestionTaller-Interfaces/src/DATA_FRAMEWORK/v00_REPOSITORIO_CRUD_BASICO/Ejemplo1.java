@@ -1,6 +1,7 @@
 package DATA_FRAMEWORK.v00_REPOSITORIO_CRUD_BASICO;
 
 import Generico.ImpresoraDeDatos;
+import entidades.Usuario;
 import entidades.Vehiculo;
 
 import java.time.LocalDate;
@@ -35,6 +36,16 @@ public class Ejemplo1 {
         System.out.println("Vehículos en el repositorio 2:");
         vehiculoRepository2.findAll().forEach(ImpresoraDeDatos::ImprimirInfoVehiculo);
 
+        //USUARIO
+        // Crear repostorio
+        UsuarioRepository usuarioRepository = new UsuarioRepository();
+        //Crear
+        Usuario usuario = new Usuario("Usuario1", "Contraseña","usuario@gmail.com");
+        //Guardar
+        usuarioRepository.save(usuario);
+        //Listar
+        usuarioRepository.findAll().forEach(ImpresoraDeDatos::ImprimirInfoUsuario);
+        System.out.println("Usuario en el repositorio :");
 
     }
 }

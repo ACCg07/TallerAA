@@ -82,8 +82,7 @@ public class VehiculoRepository {
      *
      * @param vehiculo El vehículo que se va a eliminar.
      */
-    public void delete(Vehiculo vehiculo) {
-        vehiculos.remove(vehiculo.getMatricula());
+    public void delete(Vehiculo vehiculo) { vehiculos.remove(vehiculo.getMatricula());
     }
 
 
